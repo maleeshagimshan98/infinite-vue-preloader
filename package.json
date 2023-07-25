@@ -1,0 +1,36 @@
+{
+  "name": "infinite-vue-preloader",
+  "version": "1.0.0",
+  "description": "Vue Preloader is a simple and customizable Vue component that allows you to display a preloader or loading indicator while your content is being loaded. This wrapper component provides a convenient way to show a loading animation or message to users during asynchronous operations.",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maleeshagimshan98/infinite-vue-preloader"
+  },
+  "scripts": {
+    "dev": "vite serve",
+    "build" : "vite build"
+  },
+  "dependencies": {
+    "vue": "^3.2.41"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.2.0",
+    "vite": "^3.2.2"
+  },
+  "keywords": [
+    "preloader",
+    "pre-loader",
+    "vue component",
+    "component",
+    "vue"
+  ],
+  "author":{
+      "name": "Maleesha Gimshan",
+      "url": "https://github.com/maleeshagimshan98"
+  },
+  "license": "MIT"
+}
