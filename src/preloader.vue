@@ -48,8 +48,9 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     height: 100vh;
-    z-index: 100;
+    z-index: 200;
  }
 
  .icon {
@@ -64,6 +65,7 @@ export default {
 
  .preloader_text {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /** check */
+    font-weight: 500;
     margin: auto;
  }
 
