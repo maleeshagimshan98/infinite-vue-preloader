@@ -1,6 +1,6 @@
 <template>
     <div class="app">
-        <comp></comp>
+        <comp style="position: fixed;"></comp>
     </div>
 </template>
 
