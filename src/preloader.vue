@@ -1,74 +1,75 @@
 <template>
-  <div class="pre-loader" v-bind:style="{'background-color' : bgColor}"> 
+  <div class="pre-loader" v-bind:style="{ 'background-color': bgColor }">
     <slot>
       <div class="loader">
-        <spinner class="icon"/>
-        <p class="preloader_text" v-bind:style="{color : textColor}"> Loading.... </p>
-      </div> 
-    </slot> 
+        <spinner class="icon" />
+        <p class="preloader_text" v-bind:style="{ color: textColor }">Loading....</p>
+      </div>
+    </slot>
   </div>
-</template> 
+</template>
 
-<script>
-import spinner  from "./spinner.vue"
+<script lang="ts">
+import { defineComponent } from 'vue';
+import spinner from './spinner.vue';
 
-export default {
+export default defineComponent({
   data: () => {
-    return {}
+    return {};
   },
   props: {
-    bgColor : {
-      type : [String],
-      default : "white"
+    bgColor: {
+      type: [String],
+      default: 'white',
     },
-    textColor : {
-      type : [String],
-      default : "black"
+    textColor: {
+      type: [String],
+      default: 'black',
     },
   },
   methods: {},
-  components : {
-    spinner
+  components: {
+    spinner,
   },
   mounted: () => {},
-}
+});
 </script>
- 
+
 <style>
- 
- .pre-loader {
-    --padding : 5vh 10vw ;
+.pre-loader {
+  --padding: 5vh 10vw;
 
-    padding: var(--padding);
-    top: 0;
-    bottom: 0;
-    left : 0;
-    right : 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    z-index: 200;
- }
+  padding: var(--padding);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: 200;
+}
 
- .icon {
-    margin: 0vh 2vw;        
- }
+.icon {
+  margin: 0vh 2vw;
+}
 
- .loader {
-    padding: 45vh;
-    display: flex;
-    flex-direction: row;
- }
+.loader {
+  padding: 45vh;
+  display: flex;
+  flex-direction: row;
+}
 
- .preloader_text {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /** check */
-    font-weight: 500;
-    margin: auto;
- }
+.preloader_text {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /** check */
+  font-weight: 500;
+  margin: auto;
+}
 
- /**
+/**
   * check
   */
 /*
@@ -77,5 +78,4 @@ export default {
         padding :  0px;
     }
  }*/
- 
 </style>

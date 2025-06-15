@@ -12,15 +12,18 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from 'vue';
+
+export default defineComponent({
   data: () => {
-    return {}
+    return {};
   },
   props: {},
   methods: {},
   mounted: () => {},
-}
+});
 </script>
+
 <style>
 .lds-roller {
   display: inline-block;
@@ -33,7 +36,7 @@ export default {
   transform-origin: 40px 40px;
 }
 .lds-roller div:after {
-  content: " ";
+  content: ' ';
   display: block;
   position: absolute;
   width: 7px;
