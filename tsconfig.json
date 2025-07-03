@@ -46,6 +46,6 @@
     /* 💡 Compilation Settings */
     "noEmit": false /* Don't output compiled files (useful for linting) */
   },
-  "include": ["src/**/*.ts", "src/**/*.vue"],
+  "include": ["src/**/*.ts", "src/**/*.vue", "./vue.d.ts"],
   "exclude": ["node_modules", "dist", "build"]
 }
