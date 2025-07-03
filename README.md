@@ -30,7 +30,7 @@ To use the Vue Preloader component, simply include it in your Vue template and p
 </template>
 
 <script>
-import VuePreloader from "vue-preloader";
+import VuePreloader from 'vue-preloader';
 
 export default {
   components: {
